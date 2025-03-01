@@ -25,5 +25,15 @@ To start the application, run the following command:
 ```
 npm start
 ```
-
 The application will be running on `http://localhost:3000`.
+
+## Screenshots
+
+### Home
+![image](https://github.com/user-attachments/assets/c3e800bd-4f9e-4b53-9ba2-7e16dcaf6761)
+
+### Config
+![image](https://github.com/user-attachments/assets/604a95f3-4917-4f00-962b-f2c60637fa78)
+
+### After modifying...
+![image](https://github.com/user-attachments/assets/fdb50281-2116-4370-954a-21f6795957bf)
