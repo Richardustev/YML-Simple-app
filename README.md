@@ -1,22 +1,6 @@
-# My Express App
+# YML-SIMPLE-APP
 
-This is a simple Express application that serves as a starting point for building web applications using Node.js and Express.
-
-## Project Structure
-
-```
-my-express-app
-├── src
-│   ├── app.js               # Entry point of the application
-│   ├── controllers          # Contains controllers for handling requests
-│   │   └── index.js
-│   ├── routes               # Defines application routes
-│   │   └── index.js
-│   └── models               # Contains data models or schemas
-│       └── index.js
-├── package.json             # npm configuration file
-└── README.md                # Project documentation
-```
+This application is designed to test and learn about handling a YML file in conjunction with an application, with the goal of implementing dynamic configurations without touching the database.
 
 ## Installation
 
@@ -27,7 +11,7 @@ my-express-app
 
 2. Navigate to the project directory:
    ```
-   cd my-express-app
+   cd YML-SIMPLE-APP
    ```
 
 3. Install the dependencies:
@@ -43,7 +27,3 @@ npm start
 ```
 
 The application will be running on `http://localhost:3000`.
-
-## Contributing
-
-Feel free to submit issues or pull requests for any improvements or features you'd like to see!
