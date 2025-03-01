@@ -1,0 +1,5 @@
+styles:
+    titleSize: 36px
+    modoOscuro: true
+news:
+    showNews: true

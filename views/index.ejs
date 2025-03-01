@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi App con Configuración YAML</title>
+  <!-- Cargar Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- Cargar Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: <%= modoOscuro ? '#292A2D' : '#ffffff' %>;
+      color: <%= modoOscuro ? '#ffffff' : '#292A2D' %>;
+    }
+    h1 {
+      font-size: <%= titleSize %>;
+    }
+    .news {
+      display: <%= showNews ? 'block' : 'none' %>;
+    }
+    .card {
+      background-color: <%= modoOscuro ? '#47464C' : '#f8f9fa' %>;
+      color: <%= modoOscuro ? '#ffffff' : '#000000' %>;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-3">
+      <h1 class="mb-0">Lorem YML app</h1> <!-- Título sin margen inferior -->
+      <a href="/config" class="btn btn-primary"><i class="bi bi-gear"></i></a> <!-- Botón -->
+    </div><br>
+    
+    <div class="news">
+      <div class="row">
+        <!-- Noticia 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Noticia 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi nam blanditiis minima eveniet ad reiciendis, facere amet ut rerum possimus debitis distinctio autem sapiente exercitationem voluptate cupiditate quaerat? Debitis hic corporis laudantium ipsum earum mollitia, ducimus architecto neque libero. Molestiae adipisci reiciendis at impedit recusandae iure quasi? Vitae maiores ex autem commodi asperiores, beatae laudantium excepturi culpa ducimus sint iste temporibus, quas, dolorum nam iure cupiditate in dolore voluptate optio fugiat minima! Amet suscipit repudiandae illo recusandae necessitatibus nostrum placeat, harum deserunt sit veritatis cupiditate a dolore aut illum nesciunt repellendus? Laudantium veniam nemo enim vitae corrupti iure autem?</p>
+            </div>
+          </div>
+        </div>
+        <!-- Noticia 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Noticia 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi nam blanditiis minima eveniet ad reiciendis, facere amet ut rerum possimus debitis distinctio autem sapiente exercitationem voluptate cupiditate quaerat? Debitis hic corporis laudantium ipsum earum mollitia, ducimus architecto neque libero. Molestiae adipisci reiciendis at impedit recusandae iure quasi? Vitae maiores ex autem commodi asperiores, beatae laudantium excepturi culpa ducimus sint iste temporibus, quas, dolorum nam iure cupiditate in dolore voluptate optio fugiat minima! Amet suscipit repudiandae illo recusandae necessitatibus nostrum placeat, harum deserunt sit veritatis cupiditate a dolore aut illum nesciunt repellendus? Laudantium veniam nemo enim vitae corrupti iure autem?</p>
+            </div>
+          </div>
+        </div>
+        <!-- Noticia 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Noticia 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi nam blanditiis minima eveniet ad reiciendis, facere amet ut rerum possimus debitis distinctio autem sapiente exercitationem voluptate cupiditate quaerat? Debitis hic corporis laudantium ipsum earum mollitia, ducimus architecto neque libero. Molestiae adipisci reiciendis at impedit recusandae iure quasi? Vitae maiores ex autem commodi asperiores, beatae laudantium excepturi culpa ducimus sint iste temporibus, quas, dolorum nam iure cupiditate in dolore voluptate optio fugiat minima! Amet suscipit repudiandae illo recusandae necessitatibus nostrum placeat, harum deserunt sit veritatis cupiditate a dolore aut illum nesciunt repellendus? Laudantium veniam nemo enim vitae corrupti iure autem?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Cargar Bootstrap JS (opcional, si necesitas funcionalidades JS) -->
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

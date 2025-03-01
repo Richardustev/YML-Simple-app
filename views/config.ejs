@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <!-- Cargar Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: <%= modoOscuro ? '#292A2D' : '#ffffff' %>;
+        color: <%= modoOscuro ? '#ffffff' : '#292A2D' %>;
+    }
+    .card {
+        background-color: <%= modoOscuro ? '#47464C' : '#f8f9fa' %>;
+        color: <%= modoOscuro ? '#ffffff' : '#000000' %>;
+    }
+</style>
+</head>
+<!-- aa -->
+<body>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <h1 class="mb-0">Configuración</h1> <!-- Título sin margen inferior -->
+        <a href="/" class="btn btn-danger">Volver</a>
+    </div><br>
+    <div class="card">
+        <div class="card-body">
+            <form action="/update-config" method="POST">
+                <div class="mb-3">
+                    <label for="titleSize" class="form-label">Tamaño del Título:</label>
+                    <input type="text" class="form-control" id="titleSize" name="titleSize" value="<%= titleSize %>" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="showNews" name="showNews" <%= showNews ? 'checked' : '' %>>
+                    <label class="form-check-label" for="showNews">Mostrar Noticias</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="modoOscuro" name="modoOscuro" <%= modoOscuro ? 'checked' : '' %>>
+                    <label class="form-check-label" for="modoOscuro">Modo Oscuro</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Cargar Bootstrap JS (opcional, si necesitas funcionalidades JS) -->
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
